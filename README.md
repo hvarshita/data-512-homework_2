@@ -18,3 +18,13 @@ Description: This Excel file, available on the US Census Bureau website, provide
 
 * Data File 3: ["Regional Division Spreadsheet"](https://drive.google.com/file/d/1uG6Pj5m3NjBbx9Xkzdtfo_Ewo0zCNK8F/view?usp=drive_link)
 Description: This spreadsheet, included in the homework folder, lists the states grouped into regional and divisional agglomerations as defined by the US Census Bureau for the purpose of this analysis.
+
+### API Information:
+
+
+In the process of obtaining article quality predictions, we have utilized ORES, the Objective Revision Evaluation Service, which relies on machine learning models trained on Wikipedia articles that have undergone peer review using Wikipedia's content assessment procedures. To access ORES for making page quality predictions, we have made use of the API:Info. We referred to sample code snippets provided under the Creative Commons CC-BY license for various tasks, such as making page info requests and ORES requests. Additional resources that have proven to be helpful include the ORES Wiki, Wikipedia's Content Assessment guidelines, and Wikimedia API Documentation. In our Python notebooks, we've demonstrated how to call the Wikipedia API to retrieve article metadata and access ORES's machine learning model for article quality predictions. These resources collectively guide us in the process of evaluating and enhancing the quality of Wikipedia articles.
+
+1. [ORES](https://www.mediawiki.org/wiki/ORES)
+2. [Wikimedia]( https://www.mediawiki.org/wiki/API:Info)
+3. [Notebook for making Pageinfo request]( https://drive.google.com/file/d/15UoE16s-IccCTOXREjU3xDIz07tlpyrl/view?usp=sharing)
+4. [Notebook for making ORES Predictions](https://drive.google.com/file/d/17C9xsmR9U3lJeD52UTbAedlHDetwYsxs/view?usp=sharing)
