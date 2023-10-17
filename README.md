@@ -77,10 +77,6 @@ Subsequently, the dataset was aligned with a predefined schema structure through
 Following this extensive merging process, the dataset was refined by eliminating redundant fields, renaming specific columns, and reordering the data to ensure clarity and consistency. The final structured dataset was saved as "wp_scored_city_articles_by_state.csv" to conform with the requisite schema structure. This dataset served as the foundation for subsequent data analysis, addressing questions regarding article counts, population, and article quality at both the state and regional levels.
 
 
-
-
-
-
 ## Reflections 
 
 Before initiating our data analysis, it was reasonable to anticipate certain biases in the dataset. The common assumption was that states with larger populations, such as California or Washington, would naturally produce higher-quality articles due to a larger pool of potential contributors. This preconceived notion was overturned when the analysis demonstrated that states with substantial populations like California, Arizona, Florida, and Massachusetts actually had lower-quality articles per capita. This unexpected outcome underscored the complexity of factors influencing article quality, including linguistic diversity. A prominent bias emerged as we recognized that our dataset exclusively considered English articles, disregarding the non-English-speaking population. Consequently, relying solely on English articles as a data source appeared to introduce a notable bias. Additionally, while working on the dataset and  trying to categorize regions, it became evident that biases might arise based on the choice of regional division conventions.
@@ -90,4 +86,11 @@ I believe relying solely on English Wikipedia as a data source introduces a lang
 It is also possible that using these data might create biased or misleading results. Think of a situation where a company is using this data to teach a computer program to help with their marketing. They want the program to figure out what topics are important in different places. But here's the problem: the data is only from English Wikipedia, so it doesn't include stuff that's important to people who speak other languages. This means the program might not understand what really matters to those communities. So, the company's marketing decisions could be way off, leading to wrong choices and mistakes. 
 
 In conclusion, it's essential to recognize the limitations and biases inherent in the data when applying it to data science research. Biased and misleading results can arise when the dataset doesn't fully represent diverse linguistic and cultural aspects. However, in situations where research questions align with the dataset's strengths, it can still be valuable. Careful consideration and appropriate adjustments are crucial to make the most of the dataset's potential while acknowledging its constraints.
+
+## Usage 
+
+1. Clone the repository to your local machine.
+2. Download all input files
+4. Replace any data files path with your local path.
+5. Run the provided Python notebook. 
 
