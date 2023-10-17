@@ -60,7 +60,7 @@ Feel free to navigate through the repository's content for further details on ea
 
 ## Overview 
 
-In the "hcds_a2.ipynb" notebook, the process of making API calls and merging datasets was a fundamental part of the data acquisition and preparation. Initially, the notebook involved making API calls to access Wikipedia data. These calls included the retrieval of information about Wikipedia articles, encompassing their titles and revision IDs, as well as predicting their quality through the ORES model. It is worth noting that the API calls required a significant amount of time, approximately 5-6 hours, and encountered occasional timeouts, which necessitated resuming from the last successfully processed point.
+In the "hcds_a2.ipynb" notebook, the process of making API calls and merging datasets was a fundamental part of the data acquisition and preparation. Initially, the notebook involved making API calls to access Wikipedia data. These calls included the retrieval of information about Wikipedia articles, encompassing their titles and revision IDs, as well as predicting their quality through the ORES model. Please note that API calls are significantly time consuming. More details in the notebook. 
 
 Subsequently, the dataset was aligned with a predefined schema structure through the merging of datasets. This schema aimed to provide a comprehensive dataset with specific fields, including state, regional division, population, article title, revision ID, and article quality. The merging process encompassed the following key steps:
 
