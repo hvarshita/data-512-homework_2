@@ -58,6 +58,29 @@ The structure of this repository is organized as follows:
 
 Feel free to navigate through the repository's content for further details on each component.
 
+## Overview 
+
+In the "hcds_a2.ipynb" notebook, the process of making API calls and merging datasets was a fundamental part of the data acquisition and preparation. Initially, the notebook involved making API calls to access Wikipedia data. These calls included the retrieval of information about Wikipedia articles, encompassing their titles and revision IDs, as well as predicting their quality through the ORES model. It is worth noting that the API calls required a significant amount of time, approximately 5-6 hours, and encountered occasional timeouts, which necessitated resuming from the last successfully processed point.
+
+Subsequently, the dataset was aligned with a predefined schema structure through the merging of datasets. This schema aimed to provide a comprehensive dataset with specific fields, including state, regional division, population, article title, revision ID, and article quality. The merging process encompassed the following key steps:
+
+* Data Splitting: The dataset was initially split to segregate article information, separating it into distinct fields for city, state, and other pertinent data. Care was taken to handle instances where state information was absent.
+
+* Region Mapping: To introduce regional information, an external dataset, "US States by Region - US Census Bureau," was imported. The region and division fields were amalgamated into a new field termed "regional_division," which was associated with each state.
+
+* Dataset Merging: The dataset containing article predictions was merged with the regional and state-level information, unifying regional and article data.
+
+* Population Data Integration: To create a comprehensive dataset for per capita analysis, population data from "NST-EST2022.xlsx" was imported. This population data was subsequently merged with the pre-existing dataset.
+
+* Final Data Integration: The notebook concluded by reading the intermediate "city.json" file to acquire the last revision IDs, which were then integrated into the combined dataset.
+
+Following this extensive merging process, the dataset was refined by eliminating redundant fields, renaming specific columns, and reordering the data to ensure clarity and consistency. The final structured dataset was saved as "wp_scored_city_articles_by_state.csv" to conform with the requisite schema structure. This dataset served as the foundation for subsequent data analysis, addressing questions regarding article counts, population, and article quality at both the state and regional levels.
+
+
+
+
+
+
 ## Reflections 
 
 Before initiating our data analysis, it was reasonable to anticipate certain biases in the dataset. The common assumption was that states with larger populations, such as California or Washington, would naturally produce higher-quality articles due to a larger pool of potential contributors. This preconceived notion was overturned when the analysis demonstrated that states with substantial populations like California, Arizona, Florida, and Massachusetts actually had lower-quality articles per capita. This unexpected outcome underscored the complexity of factors influencing article quality, including linguistic diversity. A prominent bias emerged as we recognized that our dataset exclusively considered English articles, disregarding the non-English-speaking population. Consequently, relying solely on English articles as a data source appeared to introduce a notable bias. Additionally, while working on the dataset and  trying to categorize regions, it became evident that biases might arise based on the choice of regional division conventions.
