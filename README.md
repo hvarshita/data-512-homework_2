@@ -48,7 +48,7 @@ The structure of this repository is organized as follows:
   - `wp_areas-no_match.txt`: A text file listing areas with no matches during data merging.
 
 - **Source Code:**
-  - The Jupyter Notebook `hcds_a2.ipynb` located in the `src` directory is used for data acquisition and analysis.
+  - The Jupyter Notebook `hcds_a2.ipynb` is used for data acquisition and analysis.
 
 - **License:**
   - A file named `LICENSE` with an MIT License for the repository.
