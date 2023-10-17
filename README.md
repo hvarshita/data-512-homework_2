@@ -28,3 +28,33 @@ In the process of obtaining article quality predictions, we have utilized ORES, 
 2. [Wikimedia]( https://www.mediawiki.org/wiki/API:Info)
 3. [Notebook for making Pageinfo request]( https://drive.google.com/file/d/15UoE16s-IccCTOXREjU3xDIz07tlpyrl/view?usp=sharing)
 4. [Notebook for making ORES Predictions](https://drive.google.com/file/d/17C9xsmR9U3lJeD52UTbAedlHDetwYsxs/view?usp=sharing)
+
+
+### **Repository Structure**
+
+The structure of this repository is organized as follows:
+
+- **Input Files:**
+  - `NST-EST2022-POP (3).xlsx`: A file containing population estimates for the year 2022.
+  - `US States by Region - US Census Bureau - Sheet1.csv`: Provides data about US states categorized by regions as per the US Census Bureau.
+  - `us_cities_by_state_SEPT.2023.csv`: Contains data related to US cities by state as of September 2023.
+
+- **Intermediate Data Files:**
+  - `title_revid.json`: A file containing JSON data of titles and revision IDs.
+  - `wiki_predictions.csv`: CSV file that stores Wikipedia article quality predictions.
+
+- **Output Files:**
+  - `wp_scored_city_articles_by_state.csv`: The final output dataset containing scored city articles by state.
+  - `wp_areas-no_match.txt`: A text file listing areas with no matches during data merging.
+
+- **Source Code:**
+  - The Jupyter Notebook `hcds_a2.ipynb` located in the `src` directory is used for data acquisition and analysis.
+
+- **License:**
+  - A file named `LICENSE` with an MIT License for the repository.
+
+- **README:**
+  - The `README.md` file contains instructions for reproducing the analysis, data descriptions, attributions, provenance information, and other relevant details. It also provides insights into the project's goals and learning reflections.
+
+Feel free to navigate through the repository's content for further details on each component.
+
